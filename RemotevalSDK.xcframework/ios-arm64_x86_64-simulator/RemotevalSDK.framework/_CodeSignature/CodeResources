@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/RemotevalSDK-Swift.h</key>
 		<data>
-		GosOYn/eOE6IkyTtpnCwy+lF9Cc=
+		D/+VsArjALFgzq4Wx5w+h/3gm54=
 		</data>
 		<key>Headers/RemotvalSDK.h</key>
 		<data>
@@ -18,27 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yBubovJDNXEpyjpX46y0cU/7gDA=
+		er8px3L+EebLw7dXOr6s5l1q4Co=
 		</data>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nn2xkZ0FVQgoYMz8VdgMt2OeLZE=
+		oBnHHGVnVXompTlGYaOU8q122t8=
 		</data>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+4tkNd/FRAq10uUAUflQjngf5Pg=
+		o9XIH9V4x2dLQWO/U3RoizPtUDE=
 		</data>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		T7qGWehbZYW30kud0snK2srbMp8=
+		1UcE15Bj4lCYlxEfzEzZFUGyC5g=
 		</data>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+4tkNd/FRAq10uUAUflQjngf5Pg=
+		o9XIH9V4x2dLQWO/U3RoizPtUDE=
 		</data>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NGk8UGqvQienvSwvuE6CdrO6SwQ=
+		TKNxkRhJx52C+X4cI5QmH2lqihw=
+		</data>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		2OoJvOG02DYui05I6RvwbjxViSU=
+		</data>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		PyTl06cW942WEnUuf4OU3bAcfuc=
+		</data>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		v3rs06QHFJXCclv2IPGscwD1wRA=
+		</data>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		PyTl06cW942WEnUuf4OU3bAcfuc=
+		</data>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		2tE6N/rD3JeQJ3sJew3/5Y8vfqg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fHmGiqiuDLfwzS2y1w5s6f1U+/hiG+UeJZYj7gGH/fo=
+			PfyEQfAKcWgTLE+L7MkByNqbsdSnuYA30hP/+Td9LPA=
 			</data>
 		</dict>
 		<key>Headers/RemotvalSDK.h</key>
@@ -81,39 +101,74 @@
 			kWV1Dnk+5RAluDV2RjIhnqpZU0n5NVop9fPAplzTgrM=
 			</data>
 		</dict>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MaNBi6ePuicXBYXyojbEJ8SeLjKsWhEcg+CZAfja0v8=
+			eah3VGr4uotXDFsL8Aw3dbMuczak0+vq6XU5lBz2ZkU=
 			</data>
 		</dict>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvKfJm1ufuCuoqCiTN5Sd/MJM95ZtLDaXbFogdQVMyo=
+			+PZOxEJqroXk6Aonw1WlsSp00a1DWOlzcdN1pcUVFQU=
 			</data>
 		</dict>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PWO7K/F8/fXJzKrhiB6dOUli/ki5ayg5F0PqNCGr124=
+			Wl3sjS1RTOtWGiUvQUeyQVaABm9W/C+MDZxcaUkqTns=
 			</data>
 		</dict>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvKfJm1ufuCuoqCiTN5Sd/MJM95ZtLDaXbFogdQVMyo=
+			+PZOxEJqroXk6Aonw1WlsSp00a1DWOlzcdN1pcUVFQU=
 			</data>
 		</dict>
-		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/RemotevalSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			No37NzkBPhDIUDOStiTphK6/GOiTzA9QGctKnnQdw0U=
+			j3QfQIoLQtMNhnYhSs4184X+z3kHeLnSVVkheLgdvXM=
+			</data>
+		</dict>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HDV0vZigA9OHqohOQCunQzZD/hrcr/kz/bU7TzpFLIA=
+			</data>
+		</dict>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+YB/1IsWGibpXKa0jEB/wPCGGLxPPmsQcAl9FhNDIr8=
+			</data>
+		</dict>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LN8a71UqK5mQf9OCLQCsDsAhyNhk6UHo6G0/74nJQbY=
+			</data>
+		</dict>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+YB/1IsWGibpXKa0jEB/wPCGGLxPPmsQcAl9FhNDIr8=
+			</data>
+		</dict>
+		<key>Modules/RemotevalSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8B02zQ1Rd4HqdXAuFG52mEqFWwDrWhz7c4TlrQPQbdw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

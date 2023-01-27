@@ -32,6 +32,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/SSAkash273/RemoteVal.git", :tag => "#{spec.version}" }
 
   spec.ios.deployment_target = '12.0'
-  spec.ios.vendored_frameworks = 'RemotevalSDK.framework'
+  spec.vendored_frameworks = 'RemotevalSDK.xcframework'
+  #spec.source_file = ""
 
 end

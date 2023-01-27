@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RemotevalSDK
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RemotevalSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import CoreLocation
@@ -53,6 +53,7 @@ public func printLog(_ items: Any...)
   @_Concurrency.MainActor(unsafe) public var buttonBackgroundColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) public var buttonTextColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) public var callBackAfterZipCreate: ((_ zipPath: Swift.String?, _ zipName: Swift.String?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var selectedMeasurementOption: RemotevalSDK.getMeasurementOption
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didReceiveMemoryWarning()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
@@ -68,6 +69,16 @@ public func printLog(_ items: Any...)
 }
 extension RemotevalSDK.RvVideoBaseScan {
   @_Concurrency.MainActor(unsafe) public func startRecording()
+}
+public enum getMeasurementOption : Swift.String, Swift.Equatable {
+  case videoBaseScan
+  case objectToPLY
+  public func stringSet() -> Swift.String
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct Insert3DViewer {
   public var width: Swift.Int
@@ -392,6 +403,7 @@ public typealias failureComplitionHandler = ((RemotevalSDK.RemotValSDKError) -> 
   public static var shared: RemotevalSDK.RVConfigClass
   public var arrFloorNames: [[Swift.String : Swift.String]]
   public var arrWallTickness: [Swift.String]
+  public var arrFloorScanOptions: [RemotevalSDK.getMeasurementOption]
   public var allCountries: [RemotevalSDK.RVCountry] {
     get
   }
@@ -402,7 +414,7 @@ public typealias failureComplitionHandler = ((RemotevalSDK.RemotValSDKError) -> 
   public func generateJobOrder(orderInfoRequest: RemotevalSDK.OrderInfoRequest, successHandler: @escaping ((_ resJobOrderId: Swift.String) -> Swift.Void), failureHandler: @escaping RemotevalSDK.failureComplitionHandler)
   public func getUploadStorageDetail(jobOrderId: Swift.String, successHandler: @escaping ((_ storageInfo: ObjectMapper.Mappable) -> Swift.Void), failureHandler: @escaping RemotevalSDK.failureComplitionHandler)
   public func uploadScan(filePath: Swift.String, fileName: Swift.String, storageInfo: ObjectMapper.Mappable, success: @escaping () -> Swift.Void, uploadComplition: @escaping (Swift.Float) -> Swift.Void, failureHandler: @escaping (Swift.Error) -> Swift.Void)
-  public func uploadFloorScanDetail(jobOrderId: Swift.String, floorIndex: Swift.Int, wallThickness: Swift.String, fileName: Swift.String, successHandler: @escaping (() -> Swift.Void), failureHandler: @escaping RemotevalSDK.failureComplitionHandler)
+  public func uploadFloorScanDetail(jobOrderId: Swift.String, floorIndex: Swift.Int, wallThickness: Swift.String, fileName: Swift.String, scanOption: RemotevalSDK.getMeasurementOption, successHandler: @escaping (() -> Swift.Void), failureHandler: @escaping RemotevalSDK.failureComplitionHandler)
   @objc deinit
 }
 extension RemotevalSDK.RVConfigClass : RemotevalSDK.CommonDelegate {
@@ -441,6 +453,8 @@ public struct JSONParameterEncoder : RemotevalSDK.ParameterEncoder {
 extension Foundation.Date.Weekday : Swift.Equatable {}
 extension Foundation.Date.Weekday : Swift.Hashable {}
 extension Foundation.Date.Weekday : Swift.RawRepresentable {}
+extension RemotevalSDK.getMeasurementOption : Swift.Hashable {}
+extension RemotevalSDK.getMeasurementOption : Swift.RawRepresentable {}
 extension RemotevalSDK.ParameterEncoding : Swift.Equatable {}
 extension RemotevalSDK.ParameterEncoding : Swift.Hashable {}
 extension RemotevalSDK.NetworkError : Swift.Equatable {}
