@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TestPodRemote"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "TestPod."
 
   spec.description  = <<-DESC
@@ -34,5 +34,10 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
   spec.vendored_frameworks = 'RemotevalSDK.xcframework'
   #spec.source_file = ""
+
+  spec.dependency "Sentry"
+  spec.dependency "Zip"
+  spec.dependency "Reachability"
+  spec.dependency "ObjectMapper"
 
 end
